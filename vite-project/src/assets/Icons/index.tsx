@@ -1,4 +1,8 @@
-export const DefaultAvatar = ({ className }) => {
+interface IconProps {
+  className: any;
+}
+
+export const DefaultAvatar = ({ className }: IconProps) => {
   return (
     <svg
       className={className}
