@@ -58,7 +58,7 @@ const Movies = [
 
 const HomePage = () => {
   return (
-    <div className="bg-[#0369a1] h-full">
+    <div className="h-full">
       <header className="flex justify-end pt-2 pr-2">
         <Link to="/login">
           <Button
