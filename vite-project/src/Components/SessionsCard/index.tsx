@@ -1,4 +1,11 @@
 import React from "react";
+interface SessionsCard {
+  MovieTime: any;
+  MovieName: string | number;
+  AdultTicketCount: number;
+  ChildTicketCount: number;
+  VipTicketCount: number;
+}
 
 const SessionsCard = ({
   MovieTime,
@@ -6,7 +13,7 @@ const SessionsCard = ({
   AdultTicketCount,
   ChildTicketCount,
   VipTicketCount,
-}) => {
+}: SessionsCard) => {
   return (
     <div className="bg-[#0e7490] w-full text-white rounded ">
       <div className="flex flex-row">

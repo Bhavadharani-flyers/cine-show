@@ -1,8 +1,23 @@
 import React from "react";
 import MovieVideo from "../../../assets/video/MovieVideo.mp4";
 // import TopBar from "../../TopBar";
+interface About {
+  Certificate: any;
+  Runtime: any;
+  Release: any;
+  Genre: any;
+  Cast: any;
+  Director: any;
+}
 
-const About = ({ Certificate, Runtime, Release, Genre, Cast, Director }) => {
+const About = ({
+  Certificate,
+  Runtime,
+  Release,
+  Genre,
+  Cast,
+  Director,
+}: About) => {
   return (
     <div className="bg-[#075985] h-screen">
       {/* <div>

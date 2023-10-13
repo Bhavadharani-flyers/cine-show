@@ -1,7 +1,11 @@
 import React from "react";
-import { ActionMovie, MovieOne } from "../../assets/images";
+import { MovieOne } from "../../assets/images";
+interface MovieCard {
+  MovieGenre: string | number;
+  MovieName: string | number;
+}
 
-const MovieCard = ({ MovieGenre, MovieName }) => {
+const MovieCard = ({ MovieGenre, MovieName }: MovieCard) => {
   return (
     <div className="box-border rounded">
       <img src={MovieOne} className="h-64" />
